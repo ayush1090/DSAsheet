@@ -4,12 +4,12 @@ public:
         
         string ans;
         
-        for(auto i : s)
+        for(int i = 0 ; i < s.size() ; i++)
         {
-            if(ans.size() && ans.back() == i)
+            if(ans.size() && ans.back() == s[i])
                 ans.pop_back();
             else
-                ans.push_back(i);
+                ans.push_back(s[i]);
         }
         
         return ans;
